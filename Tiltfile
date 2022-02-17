@@ -1,6 +1,6 @@
 SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='073267415005.dkr.ecr.us-west-2.amazonaws.com/supply-chain/tanzu-java-web-app-source')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='tap-demo')
+NAMESPACE = os.getenv("NAMESPACE", default='default')
 
 k8s_custom_deploy(
     'tanzu-java-web-app',
